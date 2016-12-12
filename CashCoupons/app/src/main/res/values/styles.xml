@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textViewStyle">@style/SansTextViewStyle</item>
+        <item name="android:buttonStyle">@style/SansButtonStyle</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="Base.Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:textColor">@android:color/white</item>
+        </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ActionBarSupport" parent="Theme.AppCompat">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:spinnerItemStyle">@style/AppSpinnerStyle</item>
+        <item name="android:spinnerDropDownItemStyle">@style/TextAppearance.AppCompat.Widget.DropDownItem</item>
+
+    </style>
+
+    <style name="OverFlow" parent="AppTheme.PopupOverlay">
+    </style>
+
+    <style name="AppSpinnerStyle" parent="Platform.Widget.AppCompat.Spinner">
+    </style>
+
+    <style name="SansTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="SansButtonStyle" parent="android:Widget.Holo.Button">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+</resources>

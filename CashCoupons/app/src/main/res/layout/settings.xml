@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <PreferenceCategory android:title="@string/deals">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/weekly_deals_notification"
+            android:summary="@string/deals_for_the_week_details"
+            android:title="@string/deals_for_the_week" >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

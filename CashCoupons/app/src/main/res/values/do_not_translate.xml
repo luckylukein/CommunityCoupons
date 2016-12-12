@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Deals tracking preferences -->
+    <string name="weekly_deals_notification" translatable="false" />
+</resources>

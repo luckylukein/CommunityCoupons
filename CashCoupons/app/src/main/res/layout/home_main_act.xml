@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/main_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/persianRed"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="COMMUNITY"
+            android:textColor="@color/appTextColor"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/persianRed"
+            android:gravity="center"
+            android:text="COUPON"
+            android:textColor="@color/appTextColor"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:paddingBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/spinner_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <include android:id="@+id/county_spinner_layout" layout="@layout/home_search_spinner" />
+            <include android:id="@+id/community_spinner_layout" layout="@layout/home_search_spinner" />
+            <include android:id="@+id/type_of_business_spinner_layout" layout="@layout/home_search_spinner" />
+            <include android:id="@+id/category_spinner_layout" layout="@layout/home_search_spinner" />
+
+            <Button
+                android:id="@+id/search_button"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_bg_round_blue"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:textColor="@android:color/white"
+                android:text="@string/search" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"
+            android:paddingBottom="5dp"
+            android:paddingTop="15dp" />
+
+        <LinearLayout
+            android:id="@+id/deals_text_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingRight="5dp"
+                android:layout_weight="70"
+                android:text="@string/learn_weekly_deals" />
+
+            <LinearLayout
+                android:layout_weight="30"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center" >
+
+               <!-- <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes_exclamation"
+                    android:textSize="18dp"
+                    android:textColor="@android:color/white" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tap_here"
+                    android:textSize="14dp"
+                    android:textColor="@android:color/white" />-->
+
+                <android.support.v7.widget.SwitchCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"
+            android:paddingBottom="5dp"
+            android:paddingTop="15dp" />
+
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/holo_blue_light"
+            android:paddingBottom="5dp"
+            android:paddingTop="15dp" />
+        -->
+
+        <!--<ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/advertisement_main" />-->
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@color/persianRed"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@android:color/white"
+                android:text="@string/need_an_app" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                android:padding="5dp"
+                android:textColor="@android:color/white"
+                android:text="@string/tap_here" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                android:padding="5dp"
+                android:textColor="@android:color/white"
+                android:text="@string/visit_us" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                android:padding="5dp"
+                android:textColor="@android:color/white"
+                android:text="@string/website_url" />
+
+
+
+
+
+            <!--<View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/holo_blue_light"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" />-->
+
+            <!--<ViewFlipper
+                android:id="@+id/viewflipper"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center|bottom"
+                android:background="@android:color/white">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/advertisement" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pepsi_logo" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/samsung_logo" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/apple" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/lg" />
+            </ViewFlipper>-->
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

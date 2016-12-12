@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/appDarkRed"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Search Results"
+        android:textColor="@color/appTextColor"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/search_results_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/list_coupons" />
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/advertise_with_us_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:background="#eaebec"
+        android:src="@drawable/advertise_with_us" />
+
+
+    <!--<android.support.v7.widget.RecyclerView
+
+            android:id="@+id/list"
+            android:name="couponsmainact.cashcoupons.ItemFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:layoutManager="LinearLayoutManager"
+            tools:context=".CouponsListActivityFragment"
+            tools:listitem="@layout/fragment_item"/>-->
+
+
+</LinearLayout>
